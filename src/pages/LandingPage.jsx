@@ -18,7 +18,21 @@ const LandingPage = () => {
           </Link>
         </div>
         
-        <div className="animate-fade-in delay-3" style={{ marginTop: '4rem', width: '100%', maxWidth: '1000px', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(112,0,255,0.4)', border: '1px solid var(--glass-border)' }}>
+        <div className="animate-fade-in delay-3" style={{ marginTop: '3rem', width: '100%', maxWidth: '1000px', aspectRatio: '16/9', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,240,255,0.4)', border: '1px solid var(--glass-border)' }}>
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/nydHKXjwu0U?autoplay=0&rel=0" 
+            title="AI Creator University Video" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen
+            style={{ display: 'block' }}
+          ></iframe>
+        </div>
+
+        <div className="animate-fade-in delay-3" style={{ marginTop: '3rem', width: '100%', maxWidth: '1000px', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(112,0,255,0.4)', border: '1px solid var(--glass-border)' }}>
           <img src="/hero_user.png" alt="AI Creator Command Center" style={{ width: '100%', display: 'block' }} />
         </div>
       </section>
