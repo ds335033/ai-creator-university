@@ -27,14 +27,15 @@ const AITutor = () => {
 
   return (
     <>
-      <div className="tutor-fab" onClick={() => setIsOpen(true)}>
-        <MessageSquare color="white" size={24} />
+      <div className="tutor-fab" onClick={() => setIsOpen(true)} style={{ overflow: 'hidden', padding: 0 }}>
+        <img src="/tutor_avatar.png" alt="AI Tutor" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       </div>
 
       <div className={`tutor-ui ${isOpen ? 'open' : ''}`}>
         <div className="tutor-header" onClick={() => setIsOpen(false)}>
           <span style={{ fontWeight: '600', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <MessageSquare size={18} /> AI Tutor
+            <img src="/tutor_avatar.png" alt="Tutor Avatar" style={{ width: '28px', height: '28px', borderRadius: '50%', objectFit: 'cover' }} />
+            <span>AI Tutor</span>
           </span>
           <X size={18} />
         </div>

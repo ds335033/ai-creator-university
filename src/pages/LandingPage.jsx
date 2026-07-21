@@ -18,8 +18,8 @@ const LandingPage = () => {
           </Link>
         </div>
         
-        <div className="animate-fade-in delay-3" style={{ marginTop: '4rem', width: '100%', maxWidth: '1000px', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(112,0,255,0.3)', border: '1px solid var(--glass-border)' }}>
-          <img src="/hero.png" alt="AI Creator Dashboard" style={{ width: '100%', display: 'block' }} />
+        <div className="animate-fade-in delay-3" style={{ marginTop: '4rem', width: '100%', maxWidth: '1000px', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(112,0,255,0.4)', border: '1px solid var(--glass-border)' }}>
+          <img src="/hero_user.png" alt="AI Creator Command Center" style={{ width: '100%', display: 'block' }} />
         </div>
       </section>
 
@@ -46,6 +46,23 @@ const LandingPage = () => {
           <div style={{ color: 'var(--accent-purple)', marginBottom: '1rem' }}><MessageSquare size={40} /></div>
           <h3>Built-in AI Tutor</h3>
           <p style={{ marginTop: '0.5rem', color: 'var(--text-secondary)' }}>Get stuck? Your personalized AI tutor is embedded directly in the course to help you debug and brainstorm.</p>
+        </div>
+      </section>
+
+      {/* Visual Showcase Section */}
+      <section className="animate-fade-in delay-3" style={{ margin: '6rem 0' }}>
+        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <h2 style={{ fontSize: '2.8rem' }} className="text-gradient-cyan">Powered by Next-Gen AI Workflows</h2>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginTop: '0.5rem' }}>Learn how to orchestrate multi-agent systems and automated creation pipelines.</p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', alignItems: 'center' }}>
+          <div className="glass-panel" style={{ padding: '1rem', overflow: 'hidden' }}>
+            <img src="/workflow_matrix.png" alt="AI Workflow Matrix" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+          </div>
+          <div className="glass-panel" style={{ padding: '1rem', overflow: 'hidden' }}>
+            <img src="/tutor_avatar.png" alt="AI Tutor Avatar" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+          </div>
         </div>
       </section>
     </div>
